@@ -81,22 +81,22 @@ class VariablesTheme {
         System.out.println("новые значения переменных:" + a + "/" + b);
 
         System.out.println("Вариант 2)С помощью арифметических операций:");
-        int a1 = 2;
-        int b1 = 5;
-        System.out.println("исходные значения переменных:" + a1 + "/" + b1);
-        a1 += b1; // a1 = 7
-        b1 -= a1; // b1 = 2
-        a1 -= b1; // a1 = 5
-        System.out.println("новые значения переменных:" + a1 + "/" + b1);
+        int num1 = 2;
+        int num2 = 5;
+        System.out.println("исходные значения переменных:" + num1 + "/" + num2);
+        num1 += num2; // a1 = 7
+        num2 -= num1; // b1 = 2
+        num1-= num2; // a1 = 5
+        System.out.println("новые значения переменных:" + num1 + "/" + num2);
 
         System.out.println("Вариант 3) помощью побитовой операции ^:");
-        int a2 = 2;
-        int b2 = 5;
-        System.out.println("исходные значения переменных:" + a2 + "/" + b2);
-        a2 ^= b2;
-        b2 ^= a2;
-        a2 ^= b2;
-        System.out.println("новые значения переменных:" + a2 + "/" + b2);
+        int num3 = 2;
+        int num4 = 5;
+        System.out.println("исходные значения переменных:" + num3 + "/" + num4);
+        num3 ^= num4;
+        num4 ^= num3;
+        num3 ^= num4;
+        System.out.println("новые значения переменных:" + num3 + "/" + num4);
 
         System.out.println("Задание (6)-Вывод символов и их кодов:");
         char signСH = '#';
