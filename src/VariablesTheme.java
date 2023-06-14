@@ -93,9 +93,9 @@ class VariablesTheme {
         int a2 = 2;
         int b2 = 5;
         System.out.println("исходные значения переменных:" + a2 + "/" + b2);
-        a2 = a2 ^ b2;
-        b2 = b2 ^ a2;
-        a2 = a2 ^ b2;
+        a2 ^= b2;
+        b2 ^= a2;
+        a2 ^= b2;
         System.out.println("новые значения переменных:" + a2 + "/" + b2);
 
         System.out.println("Задание (6)-Вывод символов и их кодов:");
