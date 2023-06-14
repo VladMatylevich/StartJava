@@ -84,9 +84,9 @@ class VariablesTheme {
         int a1 = 2;
         int b1 = 5;
         System.out.println("исходные значения переменных:" + a1 + "/" + b1);
-        a1 = a1 + b1; // a1 = 7
-        b1 = a1 - b1; // b1 = 2
-        a1 = a1 - b1; // a1 = 5
+        a1 += b1; // a1 = 7
+        b1 -= a1; // b1 = 2
+        a1 -= b1; // a1 = 5
         System.out.println("новые значения переменных:" + a1 + "/" + b1);
 
         System.out.println("Вариант 3) помощью побитовой операции ^:");
@@ -156,6 +156,6 @@ class VariablesTheme {
         int watch = minutes / 60;
         int min2 = minutes % 60;
         System.out.println(watch + ":" + min2 + ":" + sec2);
-        
+
     }
 }
