@@ -84,9 +84,9 @@ class VariablesTheme {
         int num1 = 2;
         int num2 = 5;
         System.out.println("исходные значения переменных:" + num1 + "/" + num2);
-        num1 += num2; // a1 = 7
-        num2 -= num1; // b1 = 2
-        num1-= num2; // a1 = 5
+        num1 += num2;
+        num2 -= num1;
+        num1-= num2;
         System.out.println("новые значения переменных:" + num1 + "/" + num2);
 
         System.out.println("Вариант 3) помощью побитовой операции ^:");
@@ -99,34 +99,34 @@ class VariablesTheme {
         System.out.println("новые значения переменных:" + num3 + "/" + num4);
 
         System.out.println("Задание (6)-Вывод символов и их кодов:");
-        char signСH = '#';
+        char Number = '#';
         int cod = 35;
-        char signCh1 = '&';
+        char Ampersand = '&';
         int cod2 = 38;
-        char singCh2 = '@';
+        char Atsign = '@';
         int cod3 = 64;
-        char signCh3 = '^';
+        char circumflex = '^';
         int cod4 = 94;
-        char signCh4 = '_';
+        char Underscorenum2 = '_';
         int cod5 = 95;
-        System.out.println("char код и символ кода:" + cod + " = " + signСH);
-        System.out.println("char код и символ кода:" + cod2 + " = " + signCh1);
-        System.out.println("char код и символ кода:" + cod3 + " = " + singCh2);
-        System.out.println("char код и символ кода:" + cod4 + " = " + signCh3);
-        System.out.println("char код и символ кода:" + cod5 + " = " + signCh4);
+        System.out.println("char код и символ кода:" + cod + " = " + Number);
+        System.out.println("char код и символ кода:" + cod2 + " = " + Ampersand);
+        System.out.println("char код и символ кода:" + cod3 + " = " + Atsign);
+        System.out.println("char код и символ кода:" + cod4 + " = " + circumflex);
+        System.out.println("char код и символ кода:" + cod5 + " = " + Underscorenum2);
 
         System.out.println("Задание (7)-Вывод в консоль ASCII-арт Дюка:");
-        char character, getLetter, freqCPU, title, fulling;
-        character = '/';
-        getLetter = '\\';
-        freqCPU = '_';
-        title = '(';
-        fulling = ')';
-        System.out.println(" " + character + "" + getLetter);
-        System.out.println(" " + character + " " + getLetter);
-        System.out.println(" " + character + freqCPU + title + " " + fulling + "" + getLetter);
-        System.out.println(" " + character + " " + getLetter);
-        System.out.println(" " + character + freqCPU + freqCPU + freqCPU + freqCPU + character + getLetter + freqCPU + freqCPU + getLetter);
+        char slash, Backslash, Underscore, Leftparenthesis, Rightparenthesis;
+        slash = '/';
+        Backslash = '\\';
+        Underscore = '_';
+        Leftparenthesis = '(';
+        Rightparenthesis = ')';
+        System.out.println(" " + slash + "" + Backslash);
+        System.out.println(" " + slash + " " + Backslash);
+        System.out.println(" " + slash + Underscore + Leftparenthesis + " " + Rightparenthesis + "" + Backslash);
+        System.out.println(" " + slash + " " + Backslash);
+        System.out.println(" " + slash + Underscore + Underscore + Underscore+ Underscore+ slash + Backslash + Underscore + Underscore + Underscore);
 
         System.out.println("Задание (8)-Вывод количества сотен, десятков и единиц числа");
         int number = 123;
