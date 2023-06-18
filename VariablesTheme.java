@@ -125,12 +125,12 @@ class VariablesTheme {
         char underscore = '_';
         char leftparenthesis = '(';
         char rightparenthesis = ')';
-        System.out.println("   " + slash + " " + backslash);
-        System.out.println("  " + slash + "   " + backslash);
-        System.out.println( " " +  slash +  underscore  + leftparenthesis  + " " + rightparenthesis + " " + backslash);
-        System.out.println(" " + slash + "      " + backslash);
+        System.out.println("   " + slash + "" + backslash);
+        System.out.println("  " + slash + "  " + backslash);
+        System.out.println( " " +  slash +  underscore  + leftparenthesis  + " " + rightparenthesis + "" + backslash);
+        System.out.println(""+ slash + "      " + backslash);
         System.out.println("" + slash + underscore + underscore + underscore + underscore + slash +
-                backslash + underscore + underscore + backslash );
+                backslash + underscore + underscore +backslash );
 
         System.out.println("");
 
