@@ -16,7 +16,7 @@ class VariablesTheme {
                 "dick:" + dick + ";" + "Windows10Pro:" + windowsPro + ".");
 
         System.out.println();
-        System.out.println("Задание (2)-Расчет стоимости товара со скидкой:");
+        System.out.println("\nЗадание (2)-Расчет стоимости товара со скидкой:");
         int priceBook = 200;
         int pricePen = 100;
         int sum = priceBook + pricePen;
@@ -28,7 +28,7 @@ class VariablesTheme {
 
         System.out.println();
 
-        System.out.println("Задание (3)-Вывод слова JAVA:");
+        System.out.println("\nЗадание (3)-Вывод слова JAVA:");
         System.out.println("   J    a   v     v  a ");
         System.out.println("   J   a a   v   v  a a");
         System.out.println("J  J  aaaaa   V V  aaaaa");
@@ -36,9 +36,9 @@ class VariablesTheme {
 
         System.out.println();
 
-        System.out.println("Задание (4)-Вывод min и max значений целых числовых типов:");
+        System.out.println("\nЗадание (4)-Вывод min и max значений целых числовых типов:");
         byte maxSum = 127;
-        byte maxByte  = 127;
+        byte maxByte = 127;
         maxByte++;
         System.out.println(maxSum);
         System.out.println(maxByte);
@@ -58,7 +58,7 @@ class VariablesTheme {
         System.out.println();
 
         int newMaxSumInt = 2_147_483_647;
-        int maxInt  = 2_147_483_647;
+        int maxInt = 2_147_483_647;
         maxInt++;
         System.out.println(newMaxSumInt);
         System.out.println(maxInt);
@@ -68,7 +68,7 @@ class VariablesTheme {
         System.out.println();
 
         long maxSumLong = 9_223_372_036_854_775_807L;
-        long maxLong  = 9_223_372_036_854_775_807L;
+        long maxLong = 9_223_372_036_854_775_807L;
         maxLong++;
         System.out.println(maxSumLong);
         System.out.println(maxLong);
@@ -77,7 +77,7 @@ class VariablesTheme {
 
         System.out.println();
 
-        System.out.println("Задание (5)-Перестановка значений переменных:");
+        System.out.println("\nЗадание (5)-Перестановка значений переменных:");
         System.out.println("Вариант 1)С помощью 3 переменной:");
         int a = 2;
         int b = 5;
@@ -92,7 +92,7 @@ class VariablesTheme {
         System.out.println("Вариант 2)С помощью арифметических операций:");
         System.out.println("исходные значения переменных:" + a + "/" + b);
         a += b;
-        b -= a;
+        b = a - b;
         a -= b;
         System.out.println("новые значения переменных:" + a + "/" + b);
 
@@ -108,7 +108,7 @@ class VariablesTheme {
 
         System.out.println();
 
-        System.out.println("Задание (6)-Вывод символов и их кодов:");
+        System.out.println("\nЗадание (6)-Вывод символов и их кодов:");
         char numberOne = '#';
         System.out.println("char код и символ кода" + " = " + numberOne);
         char amperSand = '&';
@@ -122,39 +122,38 @@ class VariablesTheme {
 
         System.out.println();
 
-        System.out.println("Задание (7)-Вывод в консоль ASCII-арт Дюка:");
+        System.out.println("\nЗадание (7)-Вывод в консоль ASCII-арт Дюка:");
         char slash = '/';
         char backslash = '\\';
-        underscore = '_';
-        char leftparenthesis = '(';
-        char rightparenthesis = ')';
-        System.out.println("    " + slash +  "" + backslash);
+        char leftParenthesis = '(';
+        char rightParenthesis = ')';
+        System.out.println("    " + slash + "" + backslash);
         System.out.println("   " + slash + "  " + backslash);
-        System.out.println( "  " +  slash +  underscore  + leftparenthesis  + " " +
-                rightparenthesis +  "" + backslash);
-        System.out.println(" "+ slash + "      " + backslash);
-        System.out.println("" + slash + underscore + underscore + underscore+ underscore + slash +
+        System.out.println("  " + slash + underscore + leftParenthesis + " " +
+                rightParenthesis + "" + backslash);
+        System.out.println(" " + slash + "      " + backslash);
+        System.out.println("" + slash + underscore + underscore + underscore + underscore + slash +
                 backslash + underscore + underscore + backslash);
 
         System.out.println();
 
-        System.out.println("Задание (8)-Вывод количества сотен, десятков и единиц числа");
+        System.out.println("\nЗадание (8)-Вывод количества сотен, десятков и единиц числа");
         int num = 123;
-        int units = (num / 1) % 10;
+        int ones = (num / 10);
         int tens = (num / 10) % 10;
-        int hundred = (num / 100);
-        int newSum = units+ tens + hundred;
-        int multiplication = units * tens * hundred;
+        int hundreds = (num / 100);
+        int sumDigits = ones + tens + hundreds;
+        int multiplication = ones * tens * hundreds;
         System.out.println("Число num содержит :" + num);
-        System.out.println("Едениц :" + units);
+        System.out.println("Единиц :" + ones);
         System.out.println("Десятков :" + tens);
-        System.out.println("Сотен :" + hundred);
-        System.out.println("Сумма чисел :" + newSum);
+        System.out.println("Сотен :" + hundreds);
+        System.out.println("Сумма чисел :" + sumDigits);
         System.out.println("Произведение чисел :" + multiplication);
 
         System.out.println();
 
-        System.out.println("Задание (9)-Вывод времени");
+        System.out.println("\nЗадание (9)-Вывод времени");
         int totalSec = 86399;
         int hh = totalSec / 3600;
         int mm = totalSec / 60 % 60;
@@ -163,4 +162,5 @@ class VariablesTheme {
 
     }
 }
+
 
